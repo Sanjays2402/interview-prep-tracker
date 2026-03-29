@@ -26,10 +26,13 @@ export default function Sidebar() {
   return (
     <aside className="w-[220px] h-screen flex flex-col border-r border-[#1a1a2e] bg-[#09090b] shrink-0">
       <div className="p-5 flex items-center gap-2.5">
-        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-purple-500 to-sky-500 flex items-center justify-center">
-          <Zap className="w-4 h-4 text-white" />
+        <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-violet-600 via-purple-500 to-fuchsia-500 flex items-center justify-center shadow-lg shadow-purple-500/20">
+          <span className="text-white font-black text-sm tracking-tighter">SD</span>
         </div>
-        <span className="font-bold text-[15px] tracking-tight">Interview Prep</span>
+        <div className="flex flex-col">
+          <span className="font-bold text-[14px] tracking-tight leading-tight">SystemPrep</span>
+          <span className="text-[10px] text-zinc-600 font-medium">Design Mastery</span>
+        </div>
       </div>
 
       <nav className="flex-1 px-3 py-2 space-y-0.5">
